@@ -1,0 +1,35 @@
+{
+  "name": "yavapai-fund-website",
+  "version": "1.0.0",
+  "description": "Professional website for Yavapai Alternative Management Fund - specializing in alternative investments",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "serve": "npx serve .",
+    "dev": "python3 -m http.server 8000",
+    "build": "echo 'Static website - no build step required'",
+    "test": "echo 'Open index.html in a browser to test'"
+  },
+  "keywords": [
+    "investment",
+    "alternative-investments",
+    "fund-management",
+    "financial-services",
+    "website",
+    "static-site"
+  ],
+  "author": "Yavapai Alternative Management Fund",
+  "license": "PROPRIETARY",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yavapai-fund/website.git"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "devDependencies": {},
+  "dependencies": {}
+}

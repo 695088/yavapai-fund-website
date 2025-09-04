@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Dashboard - Yavapai Fund</title>
+    <meta name="description" content="Real-time performance metrics and portfolio allocation for Yavapai Alternative Management Fund.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Yavapai</h2>
+                <span>Alternative Management Fund</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">More</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="get-involved.html" class="nav-link">Get Involved</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Performance Dashboard</h1>
+            <p>Real-time metrics and portfolio insights</p>
+        </div>
+    </section>
+
+    <!-- Live Performance Metrics -->
+    <section class="live-metrics">
+        <div class="container">
+            <h2 class="section-title">Live Performance Metrics</h2>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon">📈</div>
+                    <div class="metric-value">12.8%</div>
+                    <div class="metric-label">YTD Return</div>
+                    <div class="metric-change positive">+2.3%</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">💰</div>
+                    <div class="metric-value">$2.1M</div>
+                    <div class="metric-label">Portfolio Value</div>
+                    <div class="metric-change positive">+$150K</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">📊</div>
+                    <div class="metric-value">0.85</div>
+                    <div class="metric-label">Sharpe Ratio</div>
+                    <div class="metric-change neutral">0.00</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">⚡</div>
+                    <div class="metric-value">8.2%</div>
+                    <div class="metric-label">Max Drawdown</div>
+                    <div class="metric-change negative">-0.5%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Chart -->
+    <section class="performance-chart-section">
+        <div class="container">
+            <h2 class="section-title">Performance History</h2>
+            <div class="chart-container">
+                <div class="chart-placeholder">
+                    <div class="chart-line"></div>
+                    <div class="chart-dots">
+                        <div class="dot dot-1"></div>
+                        <div class="dot dot-2"></div>
+                        <div class="dot dot-3"></div>
+                        <div class="dot dot-4"></div>
+                        <div class="dot dot-5"></div>
+                    </div>
+                    <div class="chart-labels">
+                        <span>Jan</span>
+                        <span>Mar</span>
+                        <span>Jun</span>
+                        <span>Sep</span>
+                        <span>Dec</span>
+                    </div>
+                </div>
+                <div class="chart-legend">
+                    <div class="legend-item">
+                        <div class="legend-color yavapai"></div>
+                        <span>YAMF Portfolio</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color sp500"></div>
+                        <span>S&P 500</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color bonds"></div>
+                        <span>Aggregate Bonds</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Allocation -->
+    <section class="allocation-section">
+        <div class="container">
+            <h2 class="section-title">Current Portfolio Allocation</h2>
+            <div class="allocation-content">
+                <div class="allocation-chart">
+                    <div class="pie-chart">
+                        <div class="pie-segment fixed-income" style="--percentage: 35%">
+                            <span>35%</span>
+                        </div>
+                        <div class="pie-segment credit" style="--percentage: 25%">
+                            <span>25%</span>
+                        </div>
+                        <div class="pie-segment crypto" style="--percentage: 20%">
+                            <span>20%</span>
+                        </div>
+                        <div class="pie-segment sports" style="--percentage: 15%">
+                            <span>15%</span>
+                        </div>
+                        <div class="pie-segment cash" style="--percentage: 5%">
+                            <span>5%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="allocation-breakdown">
+                    <div class="allocation-item">
+                        <div class="allocation-color fixed-income"></div>
+                        <div class="allocation-details">
+                            <h3>Fixed Income</h3>
+                            <p>Corporate bonds, municipal securities, and structured products</p>
+                            <div class="allocation-performance positive">+8.5% YTD</div>
+                        </div>
+                    </div>
+                    <div class="allocation-item">
+                        <div class="allocation-color credit"></div>
+                        <div class="allocation-details">
+                            <h3>Credit Strategies</h3>
+                            <p>Distressed debt, mezzanine financing, and private credit</p>
+                            <div class="allocation-performance positive">+15.2% YTD</div>
+                        </div>
+                    </div>
+                    <div class="allocation-item">
+                        <div class="allocation-color crypto"></div>
+                        <div class="allocation-details">
+                            <h3>Cryptocurrency</h3>
+                            <p>Digital assets and blockchain technology investments</p>
+                            <div class="allocation-performance positive">+28.7% YTD</div>
+                        </div>
+                    </div>
+                    <div class="allocation-item">
+                        <div class="allocation-color sports"></div>
+                        <div class="allocation-details">
+                            <h3>Sports Investments</h3>
+                            <p>Team ownership, media rights, and sports technology</p>
+                            <div class="allocation-performance positive">+12.3% YTD</div>
+                        </div>
+                    </div>
+                    <div class="allocation-item">
+                        <div class="allocation-color cash"></div>
+                        <div class="allocation-details">
+                            <h3>Cash & Equivalents</h3>
+                            <p>Liquidity for opportunities and risk management</p>
+                            <div class="allocation-performance neutral">+2.1% YTD</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Risk Metrics -->
+    <section class="risk-metrics">
+        <div class="container">
+            <h2 class="section-title">Risk & Volatility Metrics</h2>
+            <div class="risk-grid">
+                <div class="risk-card">
+                    <h3>Volatility</h3>
+                    <div class="risk-value">12.4%</div>
+                    <p>Annualized portfolio volatility</p>
+                </div>
+                <div class="risk-card">
+                    <h3>Beta</h3>
+                    <div class="risk-value">0.32</div>
+                    <p>Correlation to market movements</p>
+                </div>
+                <div class="risk-card">
+                    <h3>VaR (95%)</h3>
+                    <div class="risk-value">3.2%</div>
+                    <p>Value at Risk (daily)</p>
+                </div>
+                <div class="risk-card">
+                    <h3>Information Ratio</h3>
+                    <div class="risk-value">1.45</div>
+                    <p>Risk-adjusted excess return</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Want to Learn More?</h2>
+                <p>Join YAMF and gain access to detailed performance insights and investment strategies</p>
+                <a href="get-involved.html" class="btn btn-primary">Apply to Join</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer will be loaded dynamically -->
+    <footer class="footer"></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
